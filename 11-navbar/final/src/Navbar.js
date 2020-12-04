@@ -20,15 +20,15 @@ const Navbar = () => {
   }, [showLinks]);
   return (
     <nav>
-      <div className='nav-center'>
-        <div className='nav-header'>
-          <img src={logo} className='logo' alt='logo' />
-          <button className='nav-toggle' onClick={toggleLinks}>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} className="logo" alt="logo" />
+          <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
         </div>
-        <div className='links-container' ref={linksContainerRef}>
-          <ul className='links' ref={linksRef}>
+        <div className="links-container" ref={linksContainerRef}>
+          <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
@@ -39,7 +39,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <ul className='social-icons'>
+        <ul className="social-icons">
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;
             return (
